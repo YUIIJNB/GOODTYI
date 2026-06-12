@@ -13,7 +13,7 @@ export default function Navbar({ userEmail }: { userEmail: string | undefined })
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    router.push('/login');
+    router.push('/');
     router.refresh();
   };
 
@@ -43,7 +43,6 @@ export default function Navbar({ userEmail }: { userEmail: string | undefined })
               </>
             ) : (
               <>
-                <Link href="/login" className="text-sm font-black text-gray-500 hover:text-brand-dark transition-colors uppercase tracking-widest">Se connecter</Link>
                 <Link href="/register" className="bg-brand-dark text-white text-sm font-black px-6 py-3 rounded-xl hover:bg-brand transition-all shadow-md uppercase tracking-widest">Créer un compte</Link>
               </>
             )}
@@ -91,9 +90,6 @@ export default function Navbar({ userEmail }: { userEmail: string | undefined })
               ) : (
                 <>
                   <hr className="border-gray-100 my-4" />
-                  <Link href="/login" onClick={() => setIsOpen(false)} className="p-4 text-center rounded-xl font-black text-gray-500 bg-gray-50 hover:bg-gray-100 transition-colors uppercase tracking-widest text-sm">
-                    Se connecter
-                  </Link>
                   <Link href="/register" onClick={() => setIsOpen(false)} className="p-4 text-center rounded-xl font-black bg-brand-dark text-white hover:bg-brand transition-colors shadow-md uppercase tracking-widest text-sm">
                     Créer un compte
                   </Link>

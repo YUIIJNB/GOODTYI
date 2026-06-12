@@ -23,6 +23,7 @@ export default async function InvestmentsPage() {
     { id: 'sphc', title: 'SAPH Côte d\'Ivoire (SPHC)', description: 'Agriculture (Caoutchouc) leader sur le marché.', type: 'Action', roi_percentage: 6.8, price_per_share: 6895, minimum_investment: 6895, is_active: true },
     { id: 'ontbf', title: 'Onatel Burkina (ONTBF)', description: 'Secteur Télécom - Burkina Faso. Rendements élevés historiques.', type: 'Action', roi_percentage: 11.5, price_per_share: 2855, minimum_investment: 2855, is_active: true },
     { id: 'ttlc', title: 'TotalEnergies Togo (TTLC)', description: 'Distribution pétrolière au Togo.', type: 'Action', roi_percentage: 6.2, price_per_share: 2880, minimum_investment: 2880, is_active: true },
+      { id: 'teci', title: 'TotalEnergies Côte d\'Ivoire (TECI)', description: 'TotalEnergies operations in Côte d\'Ivoire. Integrated energy major with upstream and downstream activities.', type: 'Action', roi_percentage: 6.0, price_per_share: 3200, minimum_investment: 3200, is_active: true },
     { id: 'cbibf', title: 'Coris Bank Int. (CBIBF)', description: 'Banque d\'origine Burkinabé à très fort taux de croissance.', type: 'Action', roi_percentage: 9.0, price_per_share: 20700, minimum_investment: 20700, is_active: true },
 
     // SECTEUR BANCAIRE ET FINANCE

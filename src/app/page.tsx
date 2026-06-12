@@ -94,9 +94,6 @@ export default function Home() {
                 <Link href="/register" className="bg-brand-accent hover:bg-brand-accentHover text-brand-dark text-center font-black uppercase text-sm px-8 py-4 rounded-xl transition-all shadow-xl hover:scale-105 w-full sm:w-auto">
                   Ouvrir un compte
                 </Link>
-                <Link href="/login" className="bg-white/10 hover:bg-white/20 border-2 border-white/30 text-white font-black uppercase text-center text-sm px-8 py-4 rounded-xl transition-all hover:scale-105 w-full sm:w-auto backdrop-blur-sm">
-                  Se Connecter
-                </Link>
               </div>
             </div>
             
