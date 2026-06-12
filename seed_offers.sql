@@ -20,4 +20,5 @@ VALUES
     ('ONATEL BF (ONTBF)', 'Opérateur historique du Burkina Faso. Politique de dividendes généreuse.', 'Action', 12.0, 2800, 2800, true),
     ('Emprunt Sukuk État SN', 'Finance islamique, émis par l''état du Sénégal. Taux garanti de 6%.', 'Obligation', 6.0, 10000, 100000, true),
     ('Obligation Sonatel 2020-2027', 'Emprunt corpo par Sonatel pour la 4G/5G. Très liquide et sécurisé.', 'Obligation', 6.5, 10000, 50000, true),
-    ('Tractafric Motors CI (TRAM)', 'Véhicules et engins. Profite massivement des projets du BTP.', 'Action', 5.5, 2100, 2100, true);
+    ('Tractafric Motors CI (TRAM)', 'Véhicules et engins. Profite massivement des projets du BTP.', 'Action', 5.5, 2100, 2100, true),
+    ('TotalEnergies CI (TECI)', 'TotalEnergies operations in Côte d''Ivoire. Integrated energy major with upstream and downstream activities.', 'Action', 6.0, 3200, 3200, true);
