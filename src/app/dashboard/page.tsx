@@ -14,6 +14,8 @@ export default function Dashboard() {
   const [userData, setUserData] = useState({ balance: 0, kyc_status: 'en_attente' });
   const [transactions, setTransactions] = useState<any[]>([]);
   const [portfolioValue, setPortfolioValue] = useState(0);
+  const [portfolioGainLoss, setPortfolioGainLoss] = useState(0);
+  const [portfolioReturn, setPortfolioReturn] = useState(0);
   const [totalInvested, setTotalInvested] = useState(0);
   const [showManagerPopup, setShowManagerPopup] = useState(false);
   const [showWithdrawPopup, setShowWithdrawPopup] = useState(false);
@@ -57,6 +59,9 @@ export default function Dashboard() {
           .filter((inv) => inv.status !== 'clôturé')
           .reduce((acc, inv) => acc + parseFloat(inv.amount_invested ?? 0), 0);
 
+        const gainLoss = activePortfolioValue - activeInvestedAmount;
+        const gainReturn = activeInvestedAmount > 0 ? (gainLoss / activeInvestedAmount) * 100 : 0;
+
         // Fallback sur les transactions si aucun enregistrement d'investissement n'existe encore.
         const txPortfolioValue = (txs || [])
           .filter((t) => t.type === 'achat_investissement')
@@ -64,6 +69,8 @@ export default function Dashboard() {
 
         setPortfolioValue(activePortfolioValue > 0 ? activePortfolioValue : txPortfolioValue);
         setTotalInvested(activeInvestedAmount > 0 ? activeInvestedAmount : txPortfolioValue);
+        setPortfolioGainLoss(gainLoss);
+        setPortfolioReturn(gainReturn);
 
         const channel = supabase
           .channel(`user-balance-${user.id}`)

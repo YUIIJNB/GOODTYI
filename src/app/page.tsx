@@ -14,19 +14,19 @@ export default function Home() {
   });
 
   const [topActive, setTopActive] = useState([
-    { ticker: 'SNTS', name: 'SONATEL SN', cours: 28700, var: 1.20 },
-    { ticker: 'ORAC', name: 'ORANGE CI', cours: 15650, var: 0.85 },
-    { ticker: 'SGBC', name: 'SOCIÉTÉ GÉNÉRALE CI', cours: 36200, var: 0.50 },
-    { ticker: 'ECOC', name: 'ECOBANK CI', cours: 16000, var: 1.10 },
-    { ticker: 'CBIBF', name: 'CORIS BANK INT.', cours: 20700, var: 2.30 }
+    { ticker: 'SNTS', name: 'SONATEL SN', cours: 29400, var: 1.25 },
+    { ticker: 'ORAC', name: 'ORANGE CI', cours: 16250, var: 0.95 },
+    { ticker: 'SGBC', name: 'SOCIÉTÉ GÉNÉRALE CI', cours: 37000, var: 0.60 },
+    { ticker: 'ECOC', name: 'ECOBANK CI', cours: 16250, var: 1.15 },
+    { ticker: 'CBIBF', name: 'CORIS BANK INT.', cours: 21250, var: 2.45 }
   ]);
 
   const [flopActive, setFlopActive] = useState([
-    { ticker: 'ONTBF', name: 'ONATEL BF', cours: 2855, var: -2.30 },
-    { ticker: 'NTLC', name: 'NESTLÉ TOGO', cours: 13425, var: -1.50 },
-    { ticker: 'FTSC', name: 'FILTISAC CI', cours: 2300, var: -3.42 },
-    { ticker: 'SCRC', name: 'SUCRIVOIRE CI', cours: 2645, var: -4.10 },
-    { ticker: 'ETIT', name: 'ECOBANK TG', cours: 30, var: -7.14 }
+    { ticker: 'ONTBF', name: 'ONATEL BF', cours: 2950, var: -2.10 },
+    { ticker: 'NTLC', name: 'NESTLÉ TOGO', cours: 13650, var: -1.35 },
+    { ticker: 'FTSC', name: 'FILTISAC CI', cours: 2350, var: -3.20 },
+    { ticker: 'SCRC', name: 'SUCRIVOIRE CI', cours: 2680, var: -3.90 },
+    { ticker: 'ETIT', name: 'ECOBANK TG', cours: 35, var: -6.85 }
   ]);
 
   useEffect(() => {
@@ -84,15 +84,15 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at center, #ffffff 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
             
             <div className="relative z-10 flex flex-col items-start w-full md:w-2/3 text-white">
-              <span className="bg-brand-accent text-brand-dark font-black text-[10px] tracking-widest px-3 py-1 uppercase rounded-sm mb-4">Investir Bourse</span>
+              <span className="bg-brand-accent text-brand-dark font-black text-[10px] tracking-widest px-3 py-1 uppercase rounded-sm mb-4">Coris Bourse</span>
               <h1 className="text-4xl md:text-5xl font-black uppercase mb-4 leading-none tracking-tight">Investissez dans<br/><span className="text-brand-accent">l'avenir</span> des marchés</h1>
               <p className="text-white/80 font-medium mb-8 max-w-lg">
                 Rejoignez le marché boursier régional et participez à la croissance des entreprises les plus performantes de la région ouest-africaine.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-2">
-                <Link href="/register" className="bg-brand-accent hover:bg-brand-accentHover text-brand-dark text-center font-black uppercase text-sm px-8 py-4 rounded-xl transition-all shadow-xl hover:scale-105 w-full sm:w-auto">
-                  Ouvrir un compte
+                <Link href="/login" className="bg-brand-accent hover:bg-brand-accentHover text-brand-dark text-center font-black uppercase text-sm px-8 py-4 rounded-xl transition-all shadow-xl hover:scale-105 w-full sm:w-auto">
+                  Connexion à mon compte
                 </Link>
               </div>
             </div>

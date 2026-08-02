@@ -24,7 +24,7 @@ export default function Navbar({ userEmail }: { userEmail: string | undefined })
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="bg-brand-dark text-white px-2.5 py-2 rounded-xl font-black text-lg group-hover:bg-brand transition-colors shadow-sm">IB</div>
-            <span className="font-black text-xl tracking-tight hidden sm:block text-brand-dark">Investir <span className="text-brand-accent">Bourse</span></span>
+            <span className="font-black text-xl tracking-tight hidden sm:block text-brand-dark">Coris <span className="text-brand-accent">Bourse</span></span>
           </Link>
 
           {/* Desktop Nav */}

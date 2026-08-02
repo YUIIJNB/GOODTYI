@@ -7,8 +7,8 @@ import Navbar from '@/components/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Investir Bourse - Plateforme d\'investissement',
-  description: 'Gérez vos investissements boursiers avec Investir Bourse.',
+  title: 'Coris Bourse - Plateforme d\'investissement',
+  description: 'Gérez vos investissements boursiers avec Coris Bourse.',
 }
 
 export default async function RootLayout({
@@ -50,7 +50,7 @@ export default async function RootLayout({
               <div className="col-span-1 md:col-span-2">
                  <div className="flex items-center gap-3 mb-6">
                     <div className="bg-brand-dark text-white px-2.5 py-2 rounded-xl font-black text-lg shadow-sm">IB</div>
-                    <span className="font-black text-xl tracking-tight text-brand-dark">Investir <span className="text-brand-accent">Bourse</span></span>
+                    <span className="font-black text-xl tracking-tight text-brand-dark">Coris <span className="text-brand-accent">Bourse</span></span>
                  </div>
                  <p className="text-gray-500 text-sm max-w-sm mb-6 leading-relaxed font-medium">
                     Plateforme dédiée à la démocratisation de l'investissement boursier. Accédez aux meilleures opportunités avec une sécurité maximale.
@@ -87,7 +87,7 @@ export default async function RootLayout({
            </div>
            
            <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-black text-gray-400 uppercase tracking-widest">
-              <span>© 2026 Investir Bourse. Tous droits réservés.</span>
+              <span>© 2026 Coris Bourse. Tous droits réservés.</span>
               <div className="flex gap-4 items-center">
                  <span>Plateforme agréée</span>
                  <span className="text-brand-dark bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">Certifié SecuroMax</span>
